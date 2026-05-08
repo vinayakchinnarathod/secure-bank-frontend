@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: bank-admin-dashboard
+    env: static
+    staticPublishPath: .
