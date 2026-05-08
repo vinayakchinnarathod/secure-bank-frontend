@@ -48,7 +48,7 @@ export default function DashboardEnhanced({ username, onLogout, documentVerified
       if (error.response) {
         setInfo(`Server error: ${error.response.status} - ${error.response.data || 'Unknown error'}`);
       } else if (error.request) {
-        setInfo("Cannot connect to backend server. Please ensure backend is running on localhost:8080");
+        setInfo("Cannot connect to backend server. Please ensure backend is running on https://secure-bank-backend-1.onrender.com/api");
       } else {
         setInfo(`Error: ${error.message}`);
       }
